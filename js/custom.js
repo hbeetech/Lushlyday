@@ -16,3 +16,17 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+/** Single video play */
+document.addEventListener('DOMContentLoaded', function() {
+    const videos = document.querySelectorAll('video');
+
+    videos.forEach((video) => {
+      video.addEventListener('play', function() {
+        videos.forEach((vid) => {
+          if (vid !== video) {
+            vid.pause();
+          }
+        });
+      });
+    });
+  });
