@@ -30,3 +30,22 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+  /** Map Location */
+  function initMap() {
+    // Coordinates for the location
+    var location = { lat: 12.9715987, lng: 77.5945627 }; // Replace with your exact coordinates
+
+    // Create a map centered on the location
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: location
+    });
+
+    // Add a marker to the location
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map,
+      title: 'Lushly Day Agri Tech'
+    });
+  }
