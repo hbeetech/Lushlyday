@@ -93,7 +93,7 @@ a:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: rgb(23, 131, 34);
-  border-radius: 0 0 350px 0;
+  border-radius: 0 0 150px 0;
 }
 
 .sub_page .hero_area {
@@ -477,7 +477,7 @@ a:focus {
 .about_section {
   background-color: #7335b7;
   color: #ffffff;
-  border-radius: 250px 0 250px 0;
+  border-radius: 150px 0 150px 0;
 }
 
 .about_section .row {
@@ -761,7 +761,7 @@ a:focus {
 .footer_container {
   background-color: #7335b7;
   color: #ffffff;
-  border-radius: 350px 0 0 0;
+  border-radius: 150px 0 0 0;
   padding-top: 145px;
 }
 
