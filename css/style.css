@@ -2,7 +2,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
-  background-color: #ffffff;
+  background-color: #d11f1f;
   overflow-x: hidden;
 }
 
@@ -713,12 +713,12 @@ a:focus {
   font-family: "Poppins", sans-serif;
   display: inline-block;
   padding: 10px 65px;
-  background-color: #7335b7;
+  background-color: #f8842b;
   color: #ffffff;
   border-radius: 3px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #7335b7;
+  border: 1px solid #f8842b;
   color: #fff;
   margin-top: 10px;
 }
