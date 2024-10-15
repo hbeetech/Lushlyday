@@ -475,9 +475,11 @@ a:focus {
 }
 
 .about_section {
-  background-color: #7335b7;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #141212;
   border-radius: 150px 0 150px 0;
+  margin-top: 30px;
+
 }
 
 .about_section .row {
@@ -759,10 +761,11 @@ a:focus {
 }
 
 .footer_container {
-  background-color: #7335b7;
+  background-color: #04678b;
   color: #ffffff;
   border-radius: 150px 0 0 0;
   padding-top: 145px;
+  margin-top: 30px;
 }
 
 /* info section */
