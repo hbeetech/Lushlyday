@@ -645,32 +645,6 @@ a:focus {
   background-color: #f8842b;
 }
 
-.video_section {
-  padding: 60px 0;
-  background-color: #f9f9f9;
-}
-.video-box {
-  margin-bottom: 30px;
-  border: 1px solid #ddd;
-  padding: 15px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-}
-.video-box:hover {
-  transform: scale(1.05);
-}
-.video-box video {
-  width: 100%;
-  height: auto;
-}
-.video_section h2 {
-  margin-bottom: 30px;
-}
-.video_section h4 {
-  margin-top: 10px;
-}
-
 .contact_section {
   position: relative;
 }
@@ -763,7 +737,7 @@ a:focus {
 .footer_container {
   background-color: #04678b;
   color: #ffffff;
-  border-radius: 150px 0 0 0;
+  border-radius: 80px 0 0 0;
   padding-top: 145px;
   margin-top: 30px;
 }
