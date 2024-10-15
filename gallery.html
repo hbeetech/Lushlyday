@@ -40,11 +40,91 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
+    body {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .gallery-container {
+        max-width: 1200px; /* Limits the gallery width */
+        margin: 0 auto; /* Centers the gallery on the page */
+        padding: 20px; /* Adds padding for spacing */
+        background-color: #f2f2f2; /* Light background to differentiate the gallery */
+        border-radius: 10px; /* Rounded corners for a modern look */
+        box-shadow: 0 4px 10px rgba(214, 23, 23, 0.1); /* Subtle shadow for depth */
+}
+    .video-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .video-box {
+      width: 100%;
+      max-width: 300px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .video-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    iframe {
+      width: 100%;
+      height: 170px;
+      border: none;
+    }
+
+    .video-title {
+      text-align: center;
+      padding: 10px;
+      font-size: 18px;
+      color: #333;
+      font-weight: bold;
+      background-color: #ffffff;
+      color: rgb(26, 24, 24);
+      border-radius: 0 0 10px 10px;
+    }
+
+    .gallery-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      color: #007bff;
+      text-transform: uppercase;
+    }
+
+    /* Responsive Design */
+    @media (min-width: 768px) {
+      .video-box {
+        width: 45%;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .video-box {
+        width: 30%;
+      }
+    }
+  </style>
 </head>
 
 <body class="sub_page">
-
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -90,60 +170,141 @@
     <!-- end header section -->
   </div>
 
+<!-- video gallery style-->
+<style>
+  .video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 
-<!-- Video galler section-->
-<section class="video_section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2>Our Videos</h2>
-          <p>Watch some of the highlights from our work</p>
-        </div>
+  .video-box {
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .video-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  iframe {
+    width: 100%;
+    height: 170px;
+    border: none;
+  }
+
+  .video-title {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: rgb(26, 24, 24);
+    border-radius: 0 0 10px 10px;
+  }
+
+  .gallery-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #007bff;
+    text-transform: uppercase;
+  }
+
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .video-box {
+      width: 45%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .video-box {
+      width: 30%;
+    }
+  }
+</style>
+  <!-- End video gallery style    -->
+
+  <section class="gallery"> 
+    <h1 class="gallery-title"> </h1> <!-- give gallery name-->
+    <div class="video-gallery">
+      <!-- Video 1 -->
+      <div class="video-box">
+        <iframe class="youtube-video" src="https://www.youtube.com/embed/99AVWJTbaWU?enablejsapi=1" allowfullscreen></iframe>
+        <p class="video-title">Hydroponics</p>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="video-box">
-            <video controls>
-              <source src="videos/Uses of Agri Voltaic - Lushly Day Agri Tech (720p60, h264, youtube).mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <h4 class="text-center"> Uses of Agri Voltaic <!--Video Title 1--></h4>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="video-box">
-            <video controls>
-              <source src="videos/Protected cultivation - Lushly Day Agri Tech (360p, h264, youtube).mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <h4 class="text-center">Protected cultivation <!--Video Title 2--></h4>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="video-box">
-            <video controls>
-              <source src="videos/Polyhouse - Lushly Day Agri Tech (360p, h264, youtube).mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <h4 class="text-center">Polyhouse <!--Video Title 3--></h4>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="video-box">
-            <video controls>
-              <source src="videos/Agrivoltaics - Lushly Day Agri Tech (360p, h264, youtube).mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <h4 class="text-center">Agrivoltaics <!--Video Title 3--></h4>
-          </div>
-        </div>
+
+      <!-- Video 2 -->
+      <div class="video-box">
+        <iframe class="youtube-video" src="https://www.youtube.com/embed/WzKInR2nKlU?enablejsapi=1" allowfullscreen></iframe>
+        <p class="video-title">Agri Voltaic</p>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video-box">
+        <iframe class="youtube-video" src="https://www.youtube.com/embed/hbvrRqzlr_4?enablejsapi=1" allowfullscreen></iframe>
+        <p class="video-title">Protected cultivation</p>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="video-box">
+        <iframe class="youtube-video" src="https://www.youtube.com/embed/Rft2lQzVS_A?enablejsapi=1" allowfullscreen></iframe>
+        <p class="video-title">Polyhouse</p>
+      </div>
+
+      <!-- Video 5 -->
+      <div class="video-box">
+        <iframe class="youtube-video" src="https://www.youtube.com/embed/826vWnBOsek?enablejsapi=1" allowfullscreen></iframe>
+        <p class="video-title">Use of Agri Voltaic</p>
       </div>
     </div>
+
+
+    <!-- YouTube API Script -->
+    <script>
+    let players = [];
+    let currentPlayer = null;
+
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    function onYouTubeIframeAPIReady() {
+      const iframes = document.querySelectorAll('.youtube-video');
+      iframes.forEach((iframe, index) => {
+        players[index] = new YT.Player(iframe, {
+          events: {
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      });
+    }
+
+    function onPlayerStateChange(event) {
+      if (event.data === YT.PlayerState.PLAYING) {
+        if (currentPlayer && currentPlayer !== event.target) {
+          currentPlayer.pauseVideo();
+        }
+        currentPlayer = event.target;
+      }
+    }
+    </script>
   </section>
-  <!-- End video galler section-->
+<body>
 
-
-
+    </div>
+  </div>
   <div class="footer_container">
     <!-- info section -->
 
@@ -201,7 +362,7 @@
                 Address
               </h4>
               <div class="contact_link_box">
-                <a href="https://maps.app.goo.gl/GzpEHwCoWaLvVjqG9">
+                <a href="https://maps.app.goo.gl/GzpEHwCoWaLvVjqG9" target="_blank">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
                   <span>
                     Location
@@ -231,7 +392,7 @@
               <a href="">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
-              <a href="https://www.youtube.com/@LushlyDayAgriTech">
+              <a href="https://www.youtube.com/@LushlyDayAgriTech" target="_blank">
                 <i class="fa fa-youtube" aria-hiden="true"></i>
               </a>
               <a href="">
@@ -274,7 +435,6 @@
   <!-- Google Map Not enmbed can be deleted-->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=initMap" async defer></script>
   <!-- End Google Map -->
-
 </body>
 
 </html>
