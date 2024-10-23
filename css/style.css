@@ -721,7 +721,7 @@ a:focus {
 }
 
 .map-container {
-  width: 600px;
+  width: 500px;
   height: 350px;
   border-radius: 15px; /* Smooth edge with rounded corners */
   overflow: hidden;    /* Hide the corners of the iframe */
